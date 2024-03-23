@@ -37,29 +37,38 @@
 // }
 // obj.qualification();
 
-const myName =function(){
-    return "Hello";
-}
-const greetings = function(sayHi, name){
-    console.log(sayHi()+name);
-}
-greetings(myName," Akhilesh");
-function a( ){
-    return function b(){
-        console.log("hey glad to see you back");
-    }
-}
+// const myName =function(){
+//     return "Hello";
+// }
+// const greetings = function(sayHi, name){
+//     console.log(sayHi()+name);
+// }
+// greetings(myName," Akhilesh");
+// function a( ){
+//     return function b(){
+//         console.log("hey glad to see you back");
+//     }
+// }
 
-a()();
-const c=a();
-c();function createMultiplexer(factor){
-    return function(X){
-        return X *factor; 
-    };
+// a()();
+// const c=a();
+// c();function createMultiplexer(factor){
+//     return function(X){
+//         return X *factor; 
+//     };
+// }
+//     const multiplyByTwo =createMultiplexer(2);
+//     console.log(multiplyByTwo(5));
+// const arr =[1,2,3,4];
+// console.log(arr);
+// arr[-1]=9;
+function buttonCreater(color) {
+    this.radius=10;
+    this.color= color ;
+    this.icon=false;
+    this.pressable= true; 
 }
-    const multiplyByTwo =createMultiplexer(2);
-    console.log(multiplyByTwo(5));
-const arr =[1,2,3,4];
-console.log(arr);
-arr[-1]=9;
-console.log(arr.entries());
+var redbtn = new buttonCreater("red");  
+console.log(redbtn);
+var greenbtn = new buttonCreater("green");
+console.log(greenbtn);
